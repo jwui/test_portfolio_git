@@ -43,3 +43,88 @@ body {
   display: block;
   clear: both;
 }
+
+#cont1 {
+  background-image: url("/img/profile.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#cont1 .header {
+  display: flex;
+  line-height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  width: 1400px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+#cont1 .header .logo {
+  margin-right: 260px;
+  display: flex;
+}
+#cont1 .header .logo img {
+  align-items: center;
+}
+#cont1 .header .gnb {
+  display: flex;
+}
+#cont1 .header .gnb li {
+  line-height: 60px;
+}
+#cont1 .header .gnb li a {
+  margin: 0 15px;
+  color: #fff;
+  position: relative;
+}
+#cont1 .header .gnb li a:hover::after {
+  content: "";
+  width: 70%;
+  display: inline-block;
+  background-color: #fff;
+  height: 2px;
+  position: relative;
+  left: 15%;
+  top: -40px;
+}
+#cont1 .header a {
+  color: black;
+}
+#cont1 .header .loginbtn {
+  line-height: 40px;
+  height: 40px;
+  background-color: white;
+  width: 120px;
+  text-align: center;
+  margin-left: 260px;
+  border-radius: 10px;
+}
+
+.context {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.context h3 {
+  font-size: 22px;
+}
+.context h2 {
+  margin-bottom: 36px;
+  font-size: 44px;
+}
+.context p {
+  margin-bottom: 46px;
+  font-size: 16px;
+}
+.context .iconsbar {
+  margin-top: 50px;
+}
+.context .iconsbar i {
+  margin: 0 25px;
+  color: #fff;
+  font-size: 30px;
+}
