@@ -179,6 +179,9 @@ body {
   align-items: flex-end;
 }
 
+#cont3 {
+  background-color: #fafafa;
+}
 #cont3 .context {
   display: flex;
   flex-direction: column;
@@ -216,6 +219,9 @@ body {
 #cont3 .boxes .box {
   text-align: center;
   margin: 20px;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
   width: 350px;
 }
 #cont3 .boxes .box img {
