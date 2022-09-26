@@ -443,7 +443,7 @@ body {
   background-size: cover;
 }
 #cont6 .view .slider > div:nth-child(3) {
-  background-image: url("../img/post-img3.jpg");
+  background-image: url("../img/post-img1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -487,10 +487,12 @@ body {
   height: 160px;
 }
 
+#cont8 {
+  background-color: #fafafa;
+  padding-bottom: 120px;
+}
 #cont8 .context {
   text-align: center;
-  padding-bottom: 120px;
-  background-color: #fafafa;
 }
 #cont8 .context h2 {
   font-size: 24px;
