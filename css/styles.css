@@ -336,13 +336,3 @@ body {
   margin: 1%;
   background-color: orange;
 }
-#cont4 .portfolio .boxes .small {
-  height: 300px;
-}
-#cont4 .portfolio .boxes .big {
-  height: 620px;
-}
-#cont4 .portfolio .boxes .wide {
-  width: 64.666666%;
-  height: 620px;
-}
