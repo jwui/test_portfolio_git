@@ -395,7 +395,7 @@ body {
         position: absolute;
         opacity: 0;
         transition: all 0.5s;
-        z-index: 2;
+        z-index: 3;
         .contents {
           text-align: center;
           img {
@@ -568,5 +568,103 @@ body {
         }
       }
     }
+  }
+}
+
+#cont9 {
+  display: flex;
+  width: 1100px;
+  margin: 0 auto;
+  .left {
+    width: 40%;
+    h2 {
+      font-size: 24px;
+      color: #040c2c;
+      margin-bottom: 24px;
+    }
+    p {
+      margin: 24px auto;
+      color: #666;
+
+      display: inline-block;
+    }
+    span {
+      position: relative;
+      top: 5px;
+    }
+  }
+  .right {
+    width: 60%;
+    h2 {
+      font-size: 24px;
+      color: #040c2c;
+      margin-bottom: 24px;
+    }
+    input {
+      width: 300px;
+      line-height: 40px;
+      text-indent: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+    textarea {
+      resize: none;
+      width: 631px;
+      text-indent: 20px;
+      padding-top: 10px;
+    }
+  }
+  .btn {
+    background-color: #666;
+    border: none;
+    color: white;
+    width: 200px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: all 0.5s;
+    margin-bottom: 120px;
+  }
+  .btn:hover {
+    background-color: #4caf50;
+  }
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #040c2c;
+  padding: 60px 0;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 50px;
+    height: 50px;
+  }
+  .iconslist {
+    margin: 30px 0;
+    i {
+      color: #fff;
+      font-size: 20px;
+      margin: 0 20px;
+    }
+  }
+  .signature {
+    i {
+      color: #666;
+      span {
+        color: #fff;
+      }
+    }
+  }
+  .copyright {
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    margin-top: 30px;
   }
 }

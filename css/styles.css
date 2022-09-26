@@ -402,7 +402,7 @@ body {
   position: absolute;
   opacity: 0;
   transition: all 0.5s;
-  z-index: 2;
+  z-index: 3;
 }
 #cont6 .view .slider > div .contents {
   text-align: center;
@@ -570,4 +570,99 @@ body {
 #cont8 .container .cards .contents a {
   color: #666;
   font-weight: bold;
+}
+
+#cont9 {
+  display: flex;
+  width: 1100px;
+  margin: 0 auto;
+}
+#cont9 .left {
+  width: 40%;
+}
+#cont9 .left h2 {
+  font-size: 24px;
+  color: #040c2c;
+  margin-bottom: 24px;
+}
+#cont9 .left p {
+  margin: 24px auto;
+  color: #666;
+  display: inline-block;
+}
+#cont9 .left span {
+  position: relative;
+  top: 5px;
+}
+#cont9 .right {
+  width: 60%;
+}
+#cont9 .right h2 {
+  font-size: 24px;
+  color: #040c2c;
+  margin-bottom: 24px;
+}
+#cont9 .right input {
+  width: 300px;
+  line-height: 40px;
+  text-indent: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#cont9 .right textarea {
+  resize: none;
+  width: 631px;
+  text-indent: 20px;
+  padding-top: 10px;
+}
+#cont9 .btn {
+  background-color: #666;
+  border: none;
+  color: white;
+  width: 200px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: all 0.5s;
+  margin-bottom: 120px;
+}
+#cont9 .btn:hover {
+  background-color: #4caf50;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #040c2c;
+  padding: 60px 0;
+  align-items: center;
+  justify-content: center;
+}
+#footer img {
+  width: 50px;
+  height: 50px;
+}
+#footer .iconslist {
+  margin: 30px 0;
+}
+#footer .iconslist i {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 20px;
+}
+#footer .signature i {
+  color: #666;
+}
+#footer .signature i span {
+  color: #fff;
+}
+#footer .copyright {
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  margin-top: 30px;
 }
