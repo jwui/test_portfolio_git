@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Git 실습</title>
+    <title>포트폴리오 실습</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
@@ -16,21 +16,22 @@
     />
   </head>
   <body>
+    <div id="header">
+      <h1 class="logo"><img src="img/logo2.png" /></h1>
+      <div class="gnb">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">SERVICE</a></li>
+        <li><a href="#">PORTFOLIO</a></li>
+        <li><a href="#">TESTIMONIAL</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </div>
+      <a class="loginbtn" href="#">LOGIN</a>
+    </div>
     <div id="cont1">
       <div class="bg"></div>
-      <div class="header">
-        <h1 class="logo"><img src="img/logo2.png" /></h1>
-        <div class="gnb">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">SERVICE</a></li>
-          <li><a href="#">PORTFOLIO</a></li>
-          <li><a href="#">TESTIMONIAL</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </div>
-        <a class="loginbtn" href="#">LOGIN</a>
-      </div>
+
       <div class="context">
         <p>HELLO</p>
         <h2>I am Jhone Deo,</h2>
@@ -44,7 +45,7 @@
       </div>
     </div>
     <div id="cont2">
-      <div class="left">
+      <div class="left" data-aos="fade-right" data-aos-delay="0">
         <div class="text">
           <h2>About Me.</h2>
           <h3>UI / UX DESIGNER & WEB DEVELOPER</h3>
@@ -62,11 +63,13 @@
           </div>
         </div>
       </div>
-      <div class="right"><img src="img/human.png" /></div>
+      <div class="right" data-aos="fade-left" data-aos-delay="500">
+        <img src="img/human.png" />
+      </div>
     </div>
     <div id="cont3">
       <div class="context">
-        <h2>My Portfolio</h2>
+        <h2>What I'm Doing</h2>
         <p>I love what I do. I take great pride in what i do.</p>
       </div>
       <div class="boxes">
@@ -132,7 +135,49 @@
         </div>
       </div>
     </div>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <div id="cont4">
+      <div class="portfolio">
+        <div class="context">
+          <h2>My Portfolio</h2>
+          <p>I love what I do. I take great pride in what I do.</p>
+        </div>
+        <ul class="btns">
+          <li data-portfolio=".all">
+            <a href="#">ALL</a>
+          </li>
+          <li data-portfolio=".webdesign">
+            <a href="#">WEB DESIGN</a>
+          </li>
+          <li data-portfolio=".development">
+            <a href="#">DEVELOPMENT</a>
+          </li>
+          <li data-portfolio=".marketing">
+            <a href="#">MARKETING</a>
+          </li>
+        </ul>
+        <div class="boxes">
+          <div class="all webdesign small">
+            <img src="img/product1.jpg" />
+          </div>
+          <div class="all marketing small">
+            <img src="img/product2.jpg" />
+          </div>
+          <div class="all development big">
+            <img src="img/product3.jpg" />
+          </div>
+          <div class="all development big">
+            <img src="img/product4.jpg" />
+          </div>
+          <div class="all marketing small">
+            <img src="img/product5.jpg" />
+          </div>
+          <div class="all webdesign small">
+            <img src="img/product6.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/isotope.pkgd.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
   </body>

@@ -36,12 +36,75 @@ textarea {
 
 body {
   line-height: 1;
+  overflow-x: hidden;
 }
 
 .clear_fix::after {
   content: "";
   display: block;
   clear: both;
+}
+
+#header {
+  display: flex;
+  line-height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  width: 1400px;
+  margin: 0 auto;
+  font-weight: bold;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+#header .logo {
+  margin-right: 260px;
+  display: flex;
+  z-index: 2;
+}
+#header .logo img {
+  align-items: center;
+}
+#header .gnb {
+  display: flex;
+}
+#header .gnb li {
+  line-height: 100px;
+}
+#header .gnb li a {
+  margin: 0 15px;
+  color: #fff;
+  position: relative;
+}
+#header .gnb li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -10px;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+#header .gnb li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+#header a {
+  color: black;
+}
+#header .loginbtn {
+  z-index: 2;
+  line-height: 40px;
+  height: 40px;
+  background-color: white;
+  width: 80px;
+  text-align: center;
+  margin-left: 260px;
+  border-radius: 10px;
 }
 
 #cont1 {
@@ -57,48 +120,6 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   z-index: 0;
-}
-#cont1 .header {
-  display: flex;
-  line-height: 60px;
-  align-items: center;
-  justify-content: space-between;
-  width: 1400px;
-  margin: 0 auto;
-  font-weight: bold;
-  z-index: 1;
-}
-#cont1 .header .logo {
-  margin-right: 260px;
-  display: flex;
-  z-index: 2;
-}
-#cont1 .header .logo img {
-  align-items: center;
-}
-#cont1 .header .gnb {
-  display: flex;
-}
-#cont1 .header .gnb li {
-  line-height: 100px;
-}
-#cont1 .header .gnb li a {
-  margin: 0 15px;
-  color: #fff;
-  position: relative;
-}
-#cont1 .header a {
-  color: black;
-}
-#cont1 .header .loginbtn {
-  z-index: 2;
-  line-height: 40px;
-  height: 40px;
-  background-color: white;
-  width: 120px;
-  text-align: center;
-  margin-left: 260px;
-  border-radius: 10px;
 }
 #cont1 .context {
   color: #fff;
@@ -159,7 +180,7 @@ body {
   line-height: 1.5;
 }
 #cont2 .left .text .btns a {
-  background-color: #4caf50; /* Green */
+  background-color: #666;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -170,6 +191,10 @@ body {
   margin-top: 60px;
   margin-right: 20px;
   border-radius: 10px;
+  transition: all 0.5s;
+}
+#cont2 .left .text .btns a:hover {
+  background-color: #4caf50;
 }
 #cont2 .right {
   width: 50vw;
@@ -181,6 +206,7 @@ body {
 
 #cont3 {
   background-color: #fafafa;
+  height: 1100px;
 }
 #cont3 .context {
   display: flex;
@@ -189,7 +215,7 @@ body {
 }
 #cont3 .context h2 {
   font-size: 24px;
-  color: #666;
+  color: #040c2c;
   margin-top: 90px;
 }
 #cont3 .context p {
@@ -236,4 +262,87 @@ body {
 #cont3 .boxes .box p {
   margin-bottom: 50px;
   color: #666;
+}
+
+#cont4 {
+  display: flex;
+  justify-content: center;
+}
+#cont4 .portfolio {
+  width: 70%;
+}
+#cont4 .portfolio .context {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#cont4 .portfolio .context h2 {
+  font-size: 24px;
+  color: #040c2c;
+  margin-top: 90px;
+}
+#cont4 .portfolio .context p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 18px;
+  font-style: italic;
+}
+#cont4 .portfolio .context p:after {
+  display: block;
+  content: "";
+  width: 50%;
+  background-color: #666;
+  height: 2px;
+  position: relative;
+  left: 25%;
+  margin-top: 28px;
+  margin-bottom: 68px;
+}
+#cont4 .portfolio .btns {
+  display: flex;
+  justify-content: center;
+}
+#cont4 .portfolio .btns li {
+  margin: 0 20px;
+  margin-bottom: 40px;
+}
+#cont4 .portfolio .btns li a {
+  background-color: #666;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 60px;
+  margin-right: 20px;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+#cont4 .portfolio .btns li a:hover {
+  background-color: #4caf50;
+}
+#cont4 .portfolio .boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+#cont4 .portfolio .boxes img {
+  width: 100%;
+  height: 100%;
+}
+#cont4 .portfolio .boxes .all {
+  width: 31.33333%;
+  margin: 1%;
+  background-color: orange;
+}
+#cont4 .portfolio .boxes .small {
+  height: 300px;
+}
+#cont4 .portfolio .boxes .big {
+  height: 620px;
+}
+#cont4 .portfolio .boxes .wide {
+  width: 64.666666%;
+  height: 620px;
 }
