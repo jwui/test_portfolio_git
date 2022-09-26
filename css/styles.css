@@ -526,7 +526,19 @@ body {
 #cont8 .container .cards {
   border: 1px solid #b2b2b2;
   border-radius: 6px;
+  position: relative;
   width: 350px;
+}
+#cont8 .container .cards .date {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #fff;
+  line-height: 20px;
+  width: 40px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
 }
 #cont8 .container .cards img {
   width: 100%;
