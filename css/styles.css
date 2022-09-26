@@ -478,7 +478,7 @@ body {
 #cont7 .logos {
   display: flex;
   justify-content: space-evenly;
-  width: 1100px;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 120px;
 }
@@ -576,6 +576,7 @@ body {
   display: flex;
   width: 1100px;
   margin: 0 auto;
+  padding-top: 120px;
 }
 #cont9 .left {
   width: 40%;
