@@ -97,7 +97,7 @@ body {
   }
 }
 #cont1 {
-  background-image: url("./img/profile.jpg");
+  background-image: url("../img/profile.jpg");
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -423,20 +423,20 @@ body {
         }
       }
       > div:nth-child(1) {
-        background-image: url("./img/post-img1.jpg");
+        background-image: url("../img/post-img1.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         opacity: 1;
       }
       > div:nth-child(2) {
-        background-image: url("./img/post-img2.jpg");
+        background-image: url("../img/post-img2.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
       }
       > div:nth-child(3) {
-        background-image: url("./img/post-img1.jpg");
+        background-image: url("../img/post-img3.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
