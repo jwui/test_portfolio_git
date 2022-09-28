@@ -28,7 +28,8 @@ textarea {
 }
 body {
   line-height: 1;
-  overflow: hidden;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
 }
 .clear_fix::after {
   content: "";
@@ -118,10 +119,12 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
     transform: translate(-50%, -50%);
     text-align: center;
     h3 {
       font-size: 22px;
+      line-height: 1.5;
     }
     h2 {
       margin-bottom: 36px;
@@ -474,6 +477,7 @@ body {
       margin: 24px auto;
       color: #666;
       font-style: italic;
+      line-height: 1.5;
     }
     p::after {
       display: block;
@@ -516,6 +520,7 @@ body {
       margin: 24px auto;
       color: #666;
       font-style: italic;
+      line-height: 1.5;
     }
     p::after {
       display: block;
@@ -748,6 +753,13 @@ body {
       height: auto;
     }
   }
+  #cont7 {
+    .logos {
+      img:last-of-type {
+        display: none;
+      }
+    }
+  }
   #cont8 {
     .container {
       width: 100%;
@@ -794,7 +806,7 @@ body {
     .hamburger {
       display: block;
       position: absolute;
-      right: 14%;
+      right: 120px;
       top: 12px;
     }
   }
@@ -839,15 +851,13 @@ body {
       }
     }
     .right {
-      overflow: hidden;
       width: 50%;
-      right: -150px;
       position: relative;
       display: flex;
-      align-items: flex-end;
-      justify-content: flex-end;
+      align-items: center;
+      justify-content: center;
       img {
-        height: 80%;
+        height: 70%;
         position: absolute;
       }
     }

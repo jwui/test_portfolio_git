@@ -36,7 +36,8 @@ textarea {
 
 body {
   line-height: 1;
-  overflow: hidden;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
 }
 
 .clear_fix::after {
@@ -125,11 +126,13 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 #cont1 .context h3 {
   font-size: 22px;
+  line-height: 1.5;
 }
 #cont1 .context h2 {
   margin-bottom: 36px;
@@ -475,6 +478,7 @@ body {
   margin: 24px auto;
   color: #666;
   font-style: italic;
+  line-height: 1.5;
 }
 #cont7 .context p::after {
   display: block;
@@ -517,6 +521,7 @@ body {
   margin: 24px auto;
   color: #666;
   font-style: italic;
+  line-height: 1.5;
 }
 #cont8 .context p::after {
   display: block;
@@ -738,6 +743,9 @@ body {
     width: 100%;
     height: auto;
   }
+  #cont7 .logos img:last-of-type {
+    display: none;
+  }
   #cont8 .container {
     width: 100%;
   }
@@ -780,7 +788,7 @@ body {
   #header .hamburger {
     display: block;
     position: absolute;
-    right: 14%;
+    right: 120px;
     top: 12px;
   }
   #cont1 .activemenu {
@@ -823,16 +831,14 @@ body {
     width: auto;
   }
   #cont2 .right {
-    overflow: hidden;
     width: 50%;
-    right: -150px;
     position: relative;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
   }
   #cont2 .right img {
-    height: 80%;
+    height: 70%;
     position: absolute;
   }
   #cont3 .boxes .box {
