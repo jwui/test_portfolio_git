@@ -498,10 +498,11 @@ body {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 120px;
+  overflow: hidden;
 }
 #cont7 .logos img {
-  width: 160px;
-  height: 160px;
+  width: 120px;
+  height: 120px;
 }
 
 #cont8 {
@@ -846,7 +847,7 @@ body {
     margin: 2%;
   }
   #cont4 .portfolio .btns li a {
-    font-size: 14px;
+    font-size: 13px;
     padding: 15px 32px;
   }
   #cont6 .view .slider > div .contents p {
