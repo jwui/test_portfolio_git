@@ -50,7 +50,7 @@ body {
   line-height: 60px;
   align-items: center;
   justify-content: space-between;
-  width: 1400px;
+  width: 80%;
   margin: 0 auto;
   font-weight: bold;
   z-index: 1;
@@ -59,7 +59,7 @@ body {
   right: 0;
 }
 #header .logo {
-  margin-right: 260px;
+  justify-items: flex-start;
   display: flex;
   z-index: 2;
 }
@@ -96,6 +96,9 @@ body {
 #header a {
   color: black;
 }
+#header .hamburger {
+  display: none;
+}
 #header .loginbtn {
   z-index: 2;
   line-height: 40px;
@@ -103,7 +106,7 @@ body {
   background-color: white;
   width: 80px;
   text-align: center;
-  margin-left: 260px;
+  justify-items: flex-end;
   border-radius: 10px;
 }
 
@@ -255,6 +258,7 @@ body {
 #cont3 .boxes .box p {
   margin-bottom: 50px;
   color: #666;
+  line-height: 1.5;
 }
 
 #cont4 {
@@ -263,7 +267,7 @@ body {
 }
 #cont4 .portfolio {
   width: 70%;
-  height: 1500px;
+  height: auto;
 }
 #cont4 .portfolio .context {
   display: flex;
@@ -326,8 +330,15 @@ body {
   height: 100%;
 }
 #cont4 .portfolio .boxes .all {
-  width: 31.33333%;
+  width: 23%;
   margin: 1%;
+  background-color: orange;
+}
+#cont4 .portfolio .boxes .small {
+  background-color: orange;
+}
+#cont4 .portfolio .boxes .big {
+  width: 48%;
   background-color: orange;
 }
 
@@ -401,7 +412,7 @@ body {
   height: 100%;
   position: absolute;
   opacity: 0;
-  transition: all 0.5s;
+  transition: all 1s;
   z-index: 3;
 }
 #cont6 .view .slider > div .contents {
@@ -527,6 +538,7 @@ body {
   border: 1px solid #b2b2b2;
   border-radius: 6px;
   position: relative;
+  overflow: hidden;
   width: 350px;
 }
 #cont8 .container .cards .date {
@@ -544,6 +556,7 @@ body {
   width: 100%;
 }
 #cont8 .container .cards .contents {
+  background-color: #fff;
   padding: 25px;
   box-sizing: border-box;
   text-align: left;
@@ -590,6 +603,11 @@ body {
   margin: 24px auto;
   color: #666;
   display: inline-block;
+  line-height: 1.5;
+  position: relative;
+}
+#cont9 .left p:first-of-type {
+  top: 10px;
 }
 #cont9 .left span {
   position: relative;
@@ -666,4 +684,118 @@ body {
   letter-spacing: 0.2rem;
   text-align: center;
   margin-top: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  #header {
+    width: 100%;
+  }
+  #header .logo {
+    margin-right: 0px;
+  }
+  #header .loginbtn {
+    margin-left: 0px;
+  }
+  #cont2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #cont2 .left {
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  #cont2 .left .text {
+    width: auto;
+  }
+  #cont2 .right {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  #cont2 .right img {
+    height: 80%;
+    position: absolute;
+  }
+  #cont3 {
+    width: 100%;
+    height: auto;
+  }
+  #cont3 .boxes {
+    padding-bottom: 50px;
+    width: 100%;
+  }
+  #cont3 .boxes .box {
+    width: 290px;
+  }
+  #cont4 .portfolio {
+    width: 100%;
+    height: auto;
+  }
+  #cont8 .container {
+    width: 100%;
+  }
+  #cont8 .container .cards {
+    margin: 0 1%;
+    width: 31%;
+  }
+  #cont9 {
+    width: 100%;
+  }
+  #cont9 .left {
+    width: 38%;
+    margin-left: 2%;
+  }
+  #cont9 .right {
+    width: 60%;
+  }
+  #cont9 .right input {
+    width: 44%;
+    margin-right: 3%;
+  }
+  #cont9 .right textarea {
+    width: 93%;
+  }
+}
+@media screen and (max-width: 990px) {
+  #header {
+    width: 100%;
+    height: 100px;
+  }
+  #header .logo {
+    margin-left: 14%;
+  }
+  #header .loginbtn {
+    margin-right: 24%;
+  }
+  #header .gnb {
+    display: none;
+  }
+  #header .hamburger {
+    display: block;
+    position: absolute;
+    right: 14%;
+    top: 12px;
+  }
+  #cont1 .activemenu {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: relative;
+  }
+  #cont1 .activemenu .menulist {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+  #cont1 .activemenu .menulist li a {
+    color: #fff;
+    font-size: 40px;
+    line-height: 2;
+  }
 }

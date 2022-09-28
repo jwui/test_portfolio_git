@@ -54,7 +54,8 @@ let countValue = [
   },
 ];
 
-//countUp 기능 구현
+//countUp 기능 구간
+
 //전역변수 세팅
 let cont5 = document.querySelector("#cont5");
 let moveCheck = true; //카운트 업 함수 자동실행이 끝난다음에 false값으로 변경해줄 변수
@@ -66,6 +67,7 @@ window.addEventListener("scroll", () => {
   if (scTop >= cont5Start) {
     if (moveCheck == true) {
       //moveCheck를 패스할 경우에만
+      moveCheck = false; //moveCheck를 false로 설정해 한번만 동작하게끔
       countValue.forEach((item, index) => {
         //countValue 객체의 값들을 countUp함수로 전달
         countUp(item.plus, item.tag, item.complete, item.speed);
@@ -84,7 +86,6 @@ function countUp(inc, sel, des, speed) {
 
     if (num >= des) {
       clearInterval(autoCount); // 값이 목표치에 도달시 중지시키기
-      moveCheck = false; //moveCheck를 false로 설정해 한번만 동작하게끔
       desChange = des.toLocaleString("ko-kr");
       document.querySelector(sel).innerHTML = desChange; //증가가 끝나면 강제로 목표수치로
     } else {
@@ -93,6 +94,8 @@ function countUp(inc, sel, des, speed) {
     }
   }, speed);
 }
+
+// 슬라이더 기능 구간
 
 const sliderWrap = document.querySelector("#cont6 .slider");
 const circleBtn = document.querySelectorAll(".circleBtn > li");
@@ -153,5 +156,22 @@ function nextCheck() {
     sNumber = 0;
   } else {
     sNumber++;
+  }
+}
+
+//햄버거메뉴 및 메뉴 스위치 기능 구간
+let hamburgerMenu = document.querySelector("#header .hamburger");
+let activeMenu = document.querySelector("#cont1 .activemenu");
+
+hamburgerMenu.addEventListener("click", () => {
+  hamburgerMenu.classList.toggle("is-active");
+  switchMenu();
+});
+
+function switchMenu() {
+  if (hamburgerMenu.classList.contains("is-active")) {
+    console.log("active");
+  } else {
+    console.log("not active");
   }
 }
