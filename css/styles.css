@@ -28,6 +28,8 @@ select,
 textarea {
   font-family: "맑은 고딕";
   outline: 0;
+  border: 1px solid red;
+  box-sizing: border-box;
 }
 
 textarea {
@@ -497,12 +499,11 @@ body {
   justify-content: space-between;
   width: 95%;
   margin: 0 auto;
-  margin-bottom: 100px;
   overflow: hidden;
 }
 #cont7 .logos img {
-  width: 100px;
-  height: 100px;
+  width: 16.666666%;
+  height: auto;
 }
 
 #cont8 {
@@ -638,7 +639,7 @@ body {
 }
 #cont9 .right textarea {
   resize: none;
-  width: 631px;
+  width: 624px;
   text-indent: 20px;
   padding-top: 10px;
 }
@@ -744,6 +745,10 @@ body {
     width: 100%;
     height: auto;
   }
+  #cont7 .logos img {
+    width: 20%;
+    height: auto;
+  }
   #cont7 .logos img:last-of-type {
     display: none;
   }
@@ -765,11 +770,12 @@ body {
     width: 60%;
   }
   #cont9 .right input {
-    width: 44%;
-    margin-right: 3%;
+    width: 47%;
+    margin-right: 1%;
+    margin-bottom: 20px;
   }
   #cont9 .right textarea {
-    width: 93%;
+    width: 96%;
   }
 }
 @media screen and (max-width: 990px) {
@@ -847,11 +853,15 @@ body {
     margin: 2%;
   }
   #cont4 .portfolio .btns li a {
-    font-size: 13px;
-    padding: 15px 32px;
+    font-size: 12px;
+    padding: 15px 30px;
   }
   #cont6 .view .slider > div .contents p {
     width: 80%;
+  }
+  #cont7 .logos img {
+    width: 25%;
+    height: auto;
   }
   #cont7 .logos img:last-of-type {
     display: none;
@@ -905,7 +915,7 @@ body {
     height: auto;
   }
   #cont3 .boxes .box {
-    width: 46%;
+    width: 95%;
     margin: 2%;
   }
   #cont4 .portfolio {
@@ -916,7 +926,7 @@ body {
     margin-bottom: 40px;
   }
   #cont4 .portfolio .btns li a {
-    padding: 15px 10px;
+    padding: 15px 5px;
   }
   #cont4 .portfolio .btns li a:hover {
     background-color: #4caf50;
@@ -965,11 +975,11 @@ body {
   }
   #cont9 .left {
     width: 95%;
-    margin: 2.5%;
+    margin: 2.5% auto;
   }
   #cont9 .right {
     width: 95%;
-    margin: 2.5%;
+    margin: 2.5% auto;
   }
   #cont9 .right input {
     width: 100%;
