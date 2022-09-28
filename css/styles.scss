@@ -1003,6 +1003,10 @@ body {
   }
   #cont7 {
     .logos {
+      img {
+        width: 33.333333%;
+        height: auto;
+      }
       img:nth-last-of-type(3) {
         display: none;
       }

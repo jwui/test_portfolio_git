@@ -942,6 +942,10 @@ body {
     margin: 1%;
     margin: 20px 0;
   }
+  #cont7 .logos img {
+    width: 33.333333%;
+    height: auto;
+  }
   #cont7 .logos img:nth-last-of-type(3) {
     display: none;
   }
