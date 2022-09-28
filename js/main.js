@@ -170,8 +170,8 @@ hamburgerMenu.addEventListener("click", () => {
 
 function switchMenu() {
   if (hamburgerMenu.classList.contains("is-active")) {
-    console.log("active");
+    activeMenu.style.top = "0%";
   } else {
-    console.log("not active");
+    activeMenu.style.top = "-100%";
   }
 }
