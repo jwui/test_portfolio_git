@@ -823,6 +823,7 @@ body {
     width: auto;
   }
   #cont2 .right {
+    overflow: hidden;
     width: 50%;
     right: -150px;
     position: relative;
