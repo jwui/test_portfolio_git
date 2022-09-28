@@ -901,7 +901,8 @@ body {
     margin: 0 auto;
   }
   #cont2 .right img {
-    height: 100%;
+    width: 100%;
+    height: auto;
   }
   #cont3 .boxes .box {
     width: 46%;
