@@ -731,7 +731,8 @@ body {
     width: 100%;
   }
   #cont3 .boxes .box {
-    width: 290px;
+    width: 31.333333%;
+    margin: 1%;
   }
   #cont4 .portfolio {
     width: 100%;
@@ -823,7 +824,7 @@ body {
   }
   #cont2 .right {
     width: 50%;
-    right: -200px;
+    right: -150px;
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -832,6 +833,10 @@ body {
   #cont2 .right img {
     height: 80%;
     position: absolute;
+  }
+  #cont3 .boxes .box {
+    width: 46%;
+    margin: 2%;
   }
   #cont4 .portfolio .btns li a {
     font-size: 14px;
@@ -890,15 +895,19 @@ body {
   #cont2 .right img {
     height: 100%;
   }
+  #cont3 .boxes .box {
+    width: 46%;
+    margin: 2%;
+  }
   #cont4 .portfolio {
     width: 95%;
   }
   #cont4 .portfolio .btns li {
-    margin: 0 20px;
+    margin: 0 2%;
     margin-bottom: 40px;
   }
   #cont4 .portfolio .btns li a {
-    padding: 15px 20px;
+    padding: 15px 10px;
   }
   #cont4 .portfolio .btns li a:hover {
     background-color: #4caf50;
