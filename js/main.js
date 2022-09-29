@@ -161,7 +161,7 @@ function nextCheck() {
 
 //햄버거메뉴 및 메뉴 스위치 기능 구간
 let hamburgerMenu = document.querySelector("#header .hamburger");
-let activeMenu = document.querySelector("#cont1 .activemenu");
+let activeMenu = document.querySelector("#header .activemenu");
 
 hamburgerMenu.addEventListener("click", () => {
   hamburgerMenu.classList.toggle("is-active");
@@ -170,9 +170,9 @@ hamburgerMenu.addEventListener("click", () => {
 
 function switchMenu() {
   if (hamburgerMenu.classList.contains("is-active")) {
-    activeMenu.style.top = "0%";
+    activeMenu.style.top = "0vh";
   } else {
-    activeMenu.style.top = "-100%";
+    activeMenu.style.top = "-100vh";
   }
 }
 
@@ -189,7 +189,9 @@ const contact = document.querySelector("#cont9");
 
 // 축소-확대시 달라지는 메뉴들 선택
 const menuSelector = document.querySelectorAll("#header .gnb li a");
-const activeMenuSelector = document.querySelectorAll("#cont1 .activemenu li a");
+const activeMenuSelector = document.querySelectorAll(
+  "#header .activemenu li a"
+);
 
 // 페이지 최초 로드시 구간별로 offsetTop을 잡아줌
 let homeStart = home.offsetTop;

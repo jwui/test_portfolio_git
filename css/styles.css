@@ -56,10 +56,11 @@ body {
   width: 80%;
   margin: 0 auto;
   font-weight: bold;
-  z-index: 1;
-  position: absolute;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
   left: 0;
   right: 0;
+  position: fixed;
 }
 #header .logo {
   justify-items: flex-start;
@@ -112,6 +113,9 @@ body {
   justify-items: flex-end;
   border-radius: 10px;
 }
+#header .activemenu .menulist {
+  display: none;
+}
 
 #cont1 {
   background-image: url("../img/profile.jpg");
@@ -119,9 +123,6 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-#cont1 .activemenu .menulist {
-  display: none;
 }
 #cont1 .context {
   color: #fff;
@@ -818,30 +819,31 @@ body {
     position: absolute;
     right: 120px;
     top: 12px;
+    z-index: 100;
   }
-  #cont1 .activemenu {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    position: relative;
-    top: -100%;
+  #header .activemenu {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: -100vh;
     left: 0%;
     transition: all 0.5s;
   }
-  #cont1 .activemenu .menulist {
+  #header .activemenu .menulist {
     display: block;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
   }
-  #cont1 .activemenu .menulist li a {
+  #header .activemenu .menulist li a {
     color: #fff;
     font-size: 30px;
     line-height: 2;
     transition: all 0.5s;
   }
-  #cont1 .activemenu .menulist a:hover {
+  #header .activemenu .menulist a:hover {
     color: #4caf50;
   }
   #cont2 {
