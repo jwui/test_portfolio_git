@@ -858,6 +858,11 @@ body {
       z-index: 5;
       .text {
         width: auto;
+        .btns {
+          a {
+            margin-top: 20px;
+          }
+        }
       }
     }
     .right {
@@ -944,7 +949,7 @@ body {
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
-            margin-top: 60px;
+            margin-top: 20px;
             margin-right: 20px;
             border-radius: 10px;
             transition: all 0.5s;
