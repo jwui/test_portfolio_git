@@ -22,7 +22,7 @@ select,
 textarea {
   font-family: "맑은 고딕";
   outline: 0;
-  border: 1px solid red;
+  border: 1px solid gray;
   box-sizing: border-box;
 }
 textarea {
@@ -613,6 +613,8 @@ body {
       display: inline-block;
       line-height: 1.5;
       position: relative;
+      left: 10px;
+      font-size: 14px;
     }
     p:first-of-type {
       top: 10px;
@@ -713,6 +715,7 @@ body {
 
   #cont2 {
     width: 100%;
+    height: 60vh;
     display: flex;
     justify-content: space-evenly;
     .left {
@@ -727,10 +730,10 @@ body {
       width: 50%;
       position: relative;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       justify-content: flex-end;
       img {
-        height: 80%;
+        height: 100%;
         position: absolute;
       }
     }
@@ -834,7 +837,7 @@ body {
         text-align: center;
         li a {
           color: #fff;
-          font-size: 40px;
+          font-size: 30px;
           line-height: 2;
           transition: all 0.5s;
         }
@@ -864,7 +867,7 @@ body {
       align-items: center;
       justify-content: center;
       img {
-        height: 70%;
+        height: 100%;
         position: absolute;
       }
     }
@@ -920,7 +923,7 @@ body {
   #cont2 {
     flex-direction: column;
     height: 100vh;
-    margin-top: 100px;
+    margin-top: 50px;
     .left {
       flex-direction: column;
       width: 100%;
@@ -957,10 +960,6 @@ body {
       width: 100%;
       right: 0px;
       margin: 0 auto;
-      img {
-        width: 100%;
-        height: auto;
-      }
     }
   }
   #cont3 {
@@ -976,7 +975,7 @@ body {
       width: 95%;
       .btns {
         li {
-          margin: 0 2%;
+          margin: 0 1%;
           margin-bottom: 40px;
           a {
             padding: 15px 5px;

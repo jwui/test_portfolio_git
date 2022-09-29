@@ -28,7 +28,7 @@ select,
 textarea {
   font-family: "맑은 고딕";
   outline: 0;
-  border: 1px solid red;
+  border: 1px solid gray;
   box-sizing: border-box;
 }
 
@@ -614,6 +614,8 @@ body {
   display: inline-block;
   line-height: 1.5;
   position: relative;
+  left: 10px;
+  font-size: 14px;
 }
 #cont9 .left p:first-of-type {
   top: 10px;
@@ -707,6 +709,7 @@ body {
   }
   #cont2 {
     width: 100%;
+    height: 60vh;
     display: flex;
     justify-content: space-evenly;
   }
@@ -722,11 +725,11 @@ body {
     width: 50%;
     position: relative;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
   }
   #cont2 .right img {
-    height: 80%;
+    height: 100%;
     position: absolute;
   }
   #cont3 {
@@ -816,7 +819,7 @@ body {
   }
   #cont1 .activemenu .menulist li a {
     color: #fff;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 2;
     transition: all 0.5s;
   }
@@ -845,7 +848,7 @@ body {
     justify-content: center;
   }
   #cont2 .right img {
-    height: 70%;
+    height: 100%;
     position: absolute;
   }
   #cont3 .boxes .box {
@@ -874,7 +877,7 @@ body {
   #cont2 {
     flex-direction: column;
     height: 100vh;
-    margin-top: 100px;
+    margin-top: 50px;
   }
   #cont2 .left {
     flex-direction: column;
@@ -910,10 +913,6 @@ body {
     right: 0px;
     margin: 0 auto;
   }
-  #cont2 .right img {
-    width: 100%;
-    height: auto;
-  }
   #cont3 .boxes .box {
     width: 95%;
     margin: 2%;
@@ -922,7 +921,7 @@ body {
     width: 95%;
   }
   #cont4 .portfolio .btns li {
-    margin: 0 2%;
+    margin: 0 1%;
     margin-bottom: 40px;
   }
   #cont4 .portfolio .btns li a {
