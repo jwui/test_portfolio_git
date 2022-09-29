@@ -148,7 +148,7 @@ body {
   margin-top: 50px;
 }
 #cont1 .context .iconsbar i {
-  margin: 0 25px;
+  margin: 0 10px;
   color: #fff;
   font-size: 30px;
   width: 30px;
@@ -692,7 +692,7 @@ body {
   font-size: 20px;
   width: 20px;
   height: 20px;
-  margin: 0 20px;
+  margin: 0 10px;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
   border-radius: 50%;
