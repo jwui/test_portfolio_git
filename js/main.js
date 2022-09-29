@@ -175,3 +175,89 @@ function switchMenu() {
     activeMenu.style.top = "-100%";
   }
 }
+
+// 상단메뉴 클릭시 해당 구간으로 이동시키는 기능 구간
+
+// 스크롤시 이동할 구간을 각각 지정
+const home = document.querySelector("#cont1");
+const about = document.querySelector("#cont2");
+const service = document.querySelector("#cont3");
+const portfolio = document.querySelector("#cont4");
+const testimonial = document.querySelector("#cont6");
+const blog = document.querySelector("#cont8");
+const contact = document.querySelector("#cont9");
+
+// 축소-확대시 달라지는 메뉴들 선택
+const menuSelector = document.querySelectorAll("#header .gnb li a");
+const activeMenuSelector = document.querySelectorAll("#cont1 .activemenu li a");
+
+// 페이지 최초 로드시 구간별로 offsetTop을 잡아줌
+let homeStart = home.offsetTop;
+let aboutStart = about.offsetTop;
+let serviceStart = service.offsetTop;
+let portfolioStart = portfolio.offsetTop;
+let testimonialStart = testimonial.offsetTop;
+let blogStart = blog.offsetTop;
+let contactStart = contact.offsetTop;
+
+// 페이지 최초 로드시 구간별로 offsetTop을 잡아준 것을 배열에 넣어줌
+let offsetArray = [
+  homeStart,
+  aboutStart,
+  serviceStart,
+  portfolioStart,
+  testimonialStart,
+  blogStart,
+  contactStart,
+];
+
+//화면 확대시 메뉴에 적용되는 부분
+menuSelector.forEach((item, index) => {
+  menuScroll(item, index);
+});
+
+// 화면 축소시 메뉴에 적용되는 부분
+activeMenuSelector.forEach((item, index) => {
+  menuScroll(item, index);
+});
+
+// 페이지 스크롤시 작동하는 구간
+window.addEventListener("scroll", () => {
+  // 페이지 스크롤시 구간별로 offsetTop을 계속 업데이트해줌 - 중간에 창크기가 달라질수 있기 때문
+  homeStart = home.offsetTop;
+  aboutStart = about.offsetTop;
+  serviceStart = service.offsetTop;
+  portfolioStart = portfolio.offsetTop;
+  testimonialStart = testimonial.offsetTop;
+  blogStart = blog.offsetTop;
+  contactStart = contact.offsetTop;
+
+  // 구간별로 offsetTop을 업데이트해준 것을 배열에 넣어줌
+  offsetArray = [
+    homeStart,
+    aboutStart,
+    serviceStart,
+    portfolioStart,
+    testimonialStart,
+    blogStart,
+    contactStart,
+  ];
+
+  // 화면 확대시 메뉴에 적용되는 부분
+  menuSelector.forEach((item, index) => {
+    menuScroll(item, index);
+  });
+
+  // 화면 축소시 메뉴에 적용되는 부분
+  activeMenuSelector.forEach((item, index) => {
+    menuScroll(item, index);
+  });
+});
+
+// 클릭한 해당 메뉴로 스크롤시키는 함수
+function menuScroll(item, index) {
+  item.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: offsetArray[index], behavior: "smooth" });
+  });
+}
