@@ -151,6 +151,15 @@ body {
   margin: 0 25px;
   color: #fff;
   font-size: 30px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+#cont1 .context .iconsbar i:hover {
+  color: #4caf50;
 }
 
 #cont2 {
@@ -681,7 +690,16 @@ body {
 #footer .iconslist i {
   color: #fff;
   font-size: 20px;
+  width: 20px;
+  height: 20px;
   margin: 0 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+#footer .iconslist i:hover {
+  color: #4caf50;
 }
 #footer .signature i {
   color: #666;
